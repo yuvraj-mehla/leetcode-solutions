@@ -13,6 +13,7 @@ public class RomanToInteger {
                 result += current;
             }
         }
+
         return result;
     }
     static int getValue(char c){
