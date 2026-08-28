@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
-public class FIndFirstAndLastElement {
+public class FIndFirstAndLastElementPosition {
     static int[] searchRange(int[] nums, int target){
         int[] result = new int[2];
         result[0] = findFirst(nums , target);
