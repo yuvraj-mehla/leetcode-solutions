@@ -13,6 +13,7 @@ public class RemoveDuplicates {
                 nums[result] = nums[i];
             }
         }
+
         return result+1;
     }
     public static void main(String[] args) {
