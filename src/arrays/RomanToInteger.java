@@ -1,0 +1,33 @@
+package arrays;
+
+public class RomanToInteger {
+    static int romanToInt(String s){
+
+        int result = 0;
+        for (int i=0;i<s.length();i++){
+
+            int current = getValue(s.charAt(i));
+            if (i < s.length() - 1 && current < getValue(s.charAt(i+1))){
+                result -=current;
+            }else {
+                result += current;
+            }
+        }
+        return result;
+    }
+    static int getValue(char c){
+        if (c == 'I') return 1;
+        if (c == 'V') return 5;
+        if (c == 'X') return 10;
+        if (c == 'L') return 50;
+        if (c == 'C') return 100;
+        if (c == 'D') return 500;
+        return 1000;
+    }
+
+    public static void main(String[] args) {
+        String s= "IC";
+        System.out.println(romanToInt(s));
+
+    }
+}
