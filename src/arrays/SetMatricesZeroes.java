@@ -14,7 +14,6 @@ public class SetMatricesZeroes {
                     row[i] = true;
                     col[j] = true;
                 }
-
             }
         }
         
