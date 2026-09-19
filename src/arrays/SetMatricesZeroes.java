@@ -13,8 +13,10 @@ public class SetMatricesZeroes {
                 if (matrix[i][j] == 0) {
                     row[i] = true;
                     col[j] = true;
+
                 }
             }
+
         }
         
 
