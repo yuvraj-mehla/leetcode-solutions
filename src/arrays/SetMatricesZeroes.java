@@ -14,8 +14,10 @@ public class SetMatricesZeroes {
                     row[i] = true;
                     col[j] = true;
                 }
+
             }
         }
+        
 
         // m to zero
         for (int i = 0; i< m; i++){
